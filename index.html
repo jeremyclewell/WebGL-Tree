@@ -15,7 +15,7 @@
 	body {
 		margin: 0;
 		padding: 0;
-		background-image: url(/images/backgrounds/top_left.png), url(/images/backgrounds/top_right.png), url(/images/backgrounds/bottom_left.png), url(/images/backgrounds/bottom_right.png);
+		background-image: url(images/backgrounds/top_left.png), url(images/backgrounds/top_right.png), url(images/backgrounds/bottom_left.png), url(images/backgrounds/bottom_right.png);
 		background-repeat: no-repeat;
 		background-position: top left, top right, bottom left, bottom right;
 	}
@@ -288,7 +288,7 @@ $( "#blogTemplate" ).template( "blogTemplate" );
 					}
 
 					var loader = new THREE.JSONLoader();
-					loader.load( { model: "tree.js", callback: function(geo) { 
+					loader.load( { model: "js/tree.js", callback: function(geo) { 
 							geo.materials[0][0].shading = THREE.FlatShading;
 
 											var material = [ new THREE.MeshFaceMaterial()];
@@ -315,7 +315,7 @@ $( "#blogTemplate" ).template( "blogTemplate" );
 					});
 
 					var loader = new THREE.JSONLoader();
-					loader.load( { model: "initials.js", callback: function(geo) { 
+					loader.load( { model: "js/initials.js", callback: function(geo) { 
 							geo.materials[0][0].shading = THREE.FlatShading;
 
 							var material = [ new THREE.MeshFaceMaterial()];
